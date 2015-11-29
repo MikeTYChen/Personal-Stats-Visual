@@ -1,5 +1,5 @@
 Game|Sport|Team|Outcome|Date
 Bears vs. Packers|NFL|Chicago|Win|11-26-15
 Baylor vs. TCU|NCAAF|TCU|Win|11-27-15
-Ohio vs. Michigan|NCAAF|MIchigan| |11-28-15
-Northwestern vs. Illinois|NCAAF|NOrthwestern| |11-28-15
+Ohio vs. Michigan|NCAAF|Michigan|Loss|11-28-15
+Northwestern vs. Illinois|NCAAF|Northwestern|Win|11-28-15
