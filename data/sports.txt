@@ -7,3 +7,4 @@ Patriots vs. Broncos|NFL|Patriots|Loss|11-29-15
 Ravens vs. Browns|NFL|Ravens|Win|11-30-15
 Northwestern vs. Virginia Tech|NCAAB|Northwestern|Win|12-1-15
 Michigan State vs. Iowa|NCAAF|Michigan State|Win|12-5-15
+Panthers vs. Saints|NFL|Panthers|Win|12-6-15
