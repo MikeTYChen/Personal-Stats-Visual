@@ -6,3 +6,5 @@ Miles|Workout Type|Time|Date
 5 Miles|Elliptical|40 Minutes|12-5-15
 0 Miles|None|0 Minutes|12-6-15
 8 Miles|None|60 Minutes|12-7-15
+8 Miles|None|60 Minutes|12-8-15
+7.5 Miles|None|60 Minutes|12-9-15
