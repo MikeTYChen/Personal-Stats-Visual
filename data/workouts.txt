@@ -11,3 +11,4 @@ Miles|Workout Type|Time|Date
 0 Miles|None|0 Minutes|12-10-15
 1 Miles|Elliptical|10 Minutes|12-11-15
 3 Miles|Elliptical|30 Minutes|12-12-15
+3 Miles|Elliptical|30 Minutes|12-13-15
