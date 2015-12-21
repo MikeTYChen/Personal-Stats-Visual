@@ -18,3 +18,4 @@ Miles|Workout Type|Time|Date
 0 Miles|None|0 Minutes|12-17-15
 0 Miles|None|0 Minutes|12-18-15
 0 Miles|None|0 Minutes|12-19-15
+0 Miles|None|0 Minutes|12-20-15
