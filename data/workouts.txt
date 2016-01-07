@@ -37,4 +37,5 @@ Miles|Workout Type|Time|Date
 2 Miles|Elliptical|20 Minutes|1-4-16
 1 Miles|Run|10 Minutes|1-5-16
 4 Miles|Elliptical|40 Minutes|1-5-16
-0 Miles|None|0 Minutes|1-6-16
+4 Miles|Elliptical|40 Minutes|1-6-16
+4 Miles|Elliptical|40 Minutes|1-7-16
