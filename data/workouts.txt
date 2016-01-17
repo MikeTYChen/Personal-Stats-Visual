@@ -48,3 +48,4 @@ Miles|Workout Type|Time|Date
 4 Miles|Elliptical|40 Minutes|1-14-16
 0 Miles|None|0 Minutes|1-15-16
 0 Miles|None|0 Minutes|1-16-16
+1 Miles|Run|10 Minutes|1-17-16
