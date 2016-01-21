@@ -52,3 +52,4 @@ Miles|Workout Type|Time|Date
 10 Miles|Cycling|45 Minutes|1-18-16
 5 Miles|Elliptical|45 Minutes|1-19-16
 5 Miles|Elliptical|45 Minutes|1-20-16
+5 Miles|Elliptical|45 Minutes|1-21-16
