@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head> 
+    	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css"> 
+    	<link rel="stylesheet" href="css/base.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>        
+        <link href="assets/fonts/flaticon.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="vendor/angular-chart.js/dist/angular-chart.css">
+    </head>
+    <body ng-app="Stats">
+    
+        <% include partials/general/_nav.ejs %>
+		<% include partials/_mainPanel.ejs %>
+        <% include partials/_chart.ejs %>
+        <% include partials/_aboutPanel.ejs %>
+		<% include partials/general/_js.ejs %>
+    </body>
+</html>
