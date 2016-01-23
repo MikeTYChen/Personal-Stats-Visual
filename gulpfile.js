@@ -29,6 +29,15 @@ gulp.task('updateData', function() {
     var result =[];
     var count=0;
     var days = fileContent.split('\n');
+    var date = new Date();
+    var month = date.getMonth() + 1;
+    month = (month < 10 ? "0" : "") + month;
+
+    var day  = date.getDate();
+    day = (day < 10 ? "0" : "") + day;
+    var currentDate = month+"-"+day+"-"+date.getFullYear();
+    result.push({lastUpdate:currentDate});
+    console.log(currentDate);
     for(var num in days){
         var data = days[num].split('|');
         var miles = data[0].split(' ')[0];

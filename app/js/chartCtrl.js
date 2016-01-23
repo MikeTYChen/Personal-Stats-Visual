@@ -14,11 +14,13 @@ angular.module('chartCtrl', [])
   }])
   .controller("chartController", ['$scope', '$timeout', '$http', function ($scope, $timeout,$http) {
     workoutData = [];
+    $scope.lastUpdate = "";
     $http.get('data/data.json').success(function(data) {
       tempMiles = [];
       tempDate = [];
       var howMany = 24; // show only 14 days;
-      for(var num = 0; num<data.length;num++){
+      $scope.lastUpdate = data[0].lastUpdate;
+      for(var num = 1; num<data.length;num++){
         tempMiles.push(parseInt(data[num].mile));
         tempDate.push(data[num].date);
       }
