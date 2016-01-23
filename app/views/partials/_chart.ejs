@@ -1,0 +1,15 @@
+<div id="chart-panel" class="chart-panel" ng-controller="chartController">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="bar-title">Personal Workout Data</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="chart-box">
+				<canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" 
+			    chart-legend="true" chart-series="series" chart-click="onClick"></canvas>
+		    </div>
+	    </div>
+    </div>
+</div>

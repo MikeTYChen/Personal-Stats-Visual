@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+    <head> 
+    	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css"> 
+    	<link rel="stylesheet" href="css/base.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>        
+        <link href="assets/fonts/flaticon.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="vendor/angular-chart.js/dist/angular-chart.css">
+    </head>
+    <body ng-app="Stats">
+    
+        <nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MICHAEL CHEN</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-center">
+        <li><a href="http://miketychen.github.io/Portfolio">ABOUT</a></li>
+        <li><a href="http://miketychen.github.io/Portfolio">PROJECTS</a></li>
+        <li><a href="http://miketychen.github.io/Stats" target="_blank">STATS</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="mailto:miketychen@gmail.com" target="_blank"><span class="glyph-icon flaticon-email5"></span></a></li>
+        <li><a href="http://www.linkedin.com/in/miketychen" target="_blank"><span class="glyph-icon flaticon-linkedin11"></span></a></li>
+        <li><a href="http://www.github.com/miketychen" target="_blank"><span class="glyph-icon flaticon-github17"></span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+		<div class="main-panel">
+	<div class="welcome-box">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>MICHAEL CHEN</h1>
+			</div>
+			<div class="col-xs-12">
+				<h2 style="sub-title">Personal Stats Visualized</h2>
+			</div>
+			<div class="col-xs-12 down-box">
+				<a href="#chart-panel"><span class="flaticon-downarrows11 down-arr"></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+        <div id="chart-panel" class="chart-panel" ng-controller="chartController">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="bar-title">Personal Workout Data</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="chart-box">
+				<canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" 
+			    chart-legend="true" chart-series="series" chart-click="onClick"></canvas>
+		    </div>
+	    </div>
+    </div>
+</div>
+        <div class="about-panel">
+	<div class="about-box">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="assets/images/mike.jpg"/>
+			</div>
+			<div class="col-md-10 col-md-offset-1">
+				<h1>Michael Chen</h1>
+				<h3 class="text-center">I graduated Manga Cum Laude from Northwestern University studying Biological Sciences, Computer Science and Entrepreneurship. During my time at NU, I realized one thing about myself - that I really liked building - teams, products, myself.</h3>
+			</div>
+			<div class="col-xs-12">
+				<div class="social-box">
+	                <a href="mailto:miketychen@gmail.com" target="_blank"><span class="glyph-icon flaticon-email5"></span></a>                
+	                <a href="http://www.linkedin.com/in/miketychen" target="_blank"><span class="glyph-icon flaticon-linkedin11"></span></a>
+	                <a href="http://www.github.com/miketychen" target="_blank"><span class="glyph-icon flaticon-github17"></span></a>
+	            </div>
+			</div>
+			<div class="col-xs-12">
+				<div class="resume">
+					<a href="http://www.miketychen.com/Resume14.pdf" target="_blank"><h3>View Resume</h3></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+<script src="vendor/angular/angular.js"></script>
+
+<script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+<script src="vendor/Chart.js/Chart.min.js"></script>
+<script src="vendor/angular-chart.js/dist/angular-chart.js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/chartCtrl.js"></script>
+<script src="js/homeCtrl.js"></script>
+<script src="js/appRoutes.js"></script>
+    </body>
+</html>

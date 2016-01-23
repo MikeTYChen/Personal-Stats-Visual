@@ -1,0 +1,32 @@
+.about-panel{
+	background-color: $gray;
+	.about-box{
+		width:$container-width;
+		margin:0 auto;
+		text-align: center;
+		padding: 100px 0;
+		h1{
+			font-size:45px;
+			color:$blue;
+		}
+		h3{
+			line-height: 1.2em;
+		}
+		.resume{
+			margin-top: 30px;
+			color:$blue;
+		}
+		img{
+			border-radius: 50%;
+			width:150px;
+		}
+		.social-box{
+			margin-top: 15px;
+			.glyph-icon{
+				color:$blue;
+				font-size: 30px;
+				margin:0 15px;
+			}
+		}
+	}
+}

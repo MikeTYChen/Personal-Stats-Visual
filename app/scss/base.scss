@@ -1,0 +1,34 @@
+$blue:#2C86E8;
+$gray: #EEEFF1;
+$d-gray: #4F5152;
+$black: #000;
+$white:rgb(250,250,250);
+$red: #F7464A;
+
+$navbar-height:50px;
+
+$container-width:82%;
+
+$break-small: 400px;
+$break-large: 1800px;
+$break-medium:960px;
+$large-screen-width:1600px;
+
+@import 'partials/_nav.scss';
+@import 'partials/_mainPanel.scss';
+@import 'partials/_chart.scss';
+@import 'partials/_aboutPanel.scss';
+
+
+h1,h2,h3,h4,h5,h6,a,span,i,body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+h5{
+	font-size: 15px;
+}
+a:hover{
+	text-decoration: none;
+}
+.clear{
+	clear:both;
+}

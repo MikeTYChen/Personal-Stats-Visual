@@ -2,8 +2,11 @@
   "name": "Personal-Stats-Visual",
   "version": "0.0.2",
   "dependencies": {
-    "react": "~0.14.3",
-    "bootstrap": "~3.3.6"
+    "angular": "~1.4.9",
+    "angular-bootstrap": "~1.1.0",
+    "angular-chart.js": "~0.8.8",
+    "bootstrap": "~3.3.6",
+    "jquery-ui": "~1.11.4"
   },
   "homepage": "https://github.com/MikeTYChen/Personal-Stats-Visual",
   "authors": [
