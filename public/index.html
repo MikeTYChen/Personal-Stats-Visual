@@ -53,26 +53,48 @@
 	</div>
 </div>
         <div id="chart-panel" class="chart-panel" ng-controller="chartController">
-	<div class="row">
-		<div class="col-md-12">
-			<h3 class="bar-title">Personal Workout Data</h3>
+	<div class="chart-box">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="bar-title">Personal Workout Data</h3>
+			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="chart-box">
+					<canvas id="line" class="chart chart-line" chart-data="lineData" chart-labels="lineLabels" 
+				    chart-legend="true" chart-colours="pieColors" chart-series="series" chart-click="onClick"></canvas>
+			    </div>
+		    </div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="desc-box">
+					<h6 class="text-right">Last Updated: {{lastUpdate}}</h6>
+			    </div>
+		    </div>
+	    </div>
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="bar-title-1">Personal Workout Types</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="chart-box">
+					<canvas id="pie" class="chart chart-pie" chart-data="pieData" chart-labels="pieLabels" 
+				    chart-legend="true" chart-series="series" chart-colours="pieColors" chart-click="onClick"></canvas>
+			    </div>
+		    </div>
+		</div>
+	    <div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="desc-box">
+					<h6 class="text-right">Last Updated: {{lastUpdate}}</h6>
+			    </div>
+		    </div>
+	    </div>
 	</div>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="chart-box">
-				<canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" 
-			    chart-legend="true" chart-series="series" chart-click="onClick"></canvas>
-		    </div>
-	    </div>
-    </div>
-    <div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="desc-box">
-				<h6 class="text-right">Last Updated: {{lastUpdate}}</h6>
-		    </div>
-	    </div>
-    </div>
 </div>
         <div class="about-panel">
 	<div class="about-box">

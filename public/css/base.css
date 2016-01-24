@@ -36,9 +36,16 @@
 .chart-panel {
   padding: 20px;
   background-color: #fafafa; }
+  .chart-panel .chart-box {
+    width: 82%;
+    margin: 0 auto; }
   .chart-panel .bar-title {
     color: #2C86E8;
     padding: 20px;
+    text-align: center; }
+  .chart-panel .bar-title-1 {
+    color: #2C86E8;
+    padding: 40px;
     text-align: center; }
 
 .about-panel {

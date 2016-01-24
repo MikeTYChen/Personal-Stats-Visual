@@ -37,13 +37,27 @@ gulp.task('updateData', function() {
     day = (day < 10 ? "0" : "") + day;
     var currentDate = month+"-"+day+"-"+date.getFullYear();
     result.push({lastUpdate:currentDate});
-    console.log(currentDate);
+    var elliptical = 0;
+    var cycling = 0;
+    var running = 0;
+    var none = 0;
     for(var num in days){
         var data = days[num].split('|');
         var miles = data[0].split(' ')[0];
         var minutes = data[2].split(' ')[0];
+        if(data[1]=="Elliptical"){
+            elliptical++;
+        }else if(data[1]=="Cycling"){
+            cycling++;
+        }else if(data[1]=="Run"){
+            running++;
+        }else if(data[1]=="None"){
+            none++;
+        }
         result.push({mile:miles,type:data[1],time:minutes,date:data[3]});
     }
+
+    result[1] ={elliptical:elliptical,cycling:cycling,running:running,none:none};
     fs.writeFile('./public/data/data.json',JSON.stringify(result),function(err) {
     if(err) {
       console.log(err);

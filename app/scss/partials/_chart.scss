@@ -1,9 +1,18 @@
 .chart-panel{
 	padding:20px;
 	background-color: $white;
+	.chart-box{
+		width:$container-width;
+		margin:0 auto;
+	}
 	.bar-title{
 		color:$blue;
 		padding:20px;
+		text-align: center;
+	}
+	.bar-title-1{
+		color:$blue;
+		padding:40px;
 		text-align: center;
 	}
 }
