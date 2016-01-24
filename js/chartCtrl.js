@@ -9,32 +9,35 @@ angular.module('chartCtrl', [])
     });
     // Configure all line charts
     ChartJsProvider.setOptions('Line', {
-      datasetFill: false
+      datasetFill: false,
+      scaleShowHorizontalLines: true
     });
   }])
   .controller("chartController", ['$scope', '$timeout', '$http', function ($scope, $timeout,$http) {
-    workoutData = [];
-    timeData = [];
-    $scope.lastUpdate = "";
+    var howMany = 26; // show only 14 days;
+    $scope.pieColors = ["#46BFBD","#2C86E8","#FFC870","#FF5A5E"];
     $http.get('data/data.json').success(function(data) {
-      tempMiles = [];
-      tempTime = [];
-      tempDate = [];
-      var howMany = 24; // show only 14 days;
+      milesData = [];
+      timeData = [];
+      dateData = [];
+      //Get Last Updated Date
       $scope.lastUpdate = data[0].lastUpdate;
-      for(var num = 1; num<data.length;num++){
-        tempMiles.push(parseInt(data[num].mile));
-        tempTime.push(parseInt(data[num].time));
-        tempDate.push(data[num].date);
+
+      //Parse JSON DATA
+      for(var num = 2; num<data.length;num++){
+        milesData.push(parseInt(data[num].mile));
+        timeData.push(parseInt(data[num].time));
+        dateData.push(data[num].date);
       }
-      $scope.phones = data[0];
-      workoutData = tempMiles;
-      timeData = tempTime;
-      $scope.labels = tempDate;
-      var length = workoutData.length;
-      $scope.labels = tempDate.slice(length-howMany, length);
-      $scope.data = [workoutData.slice(length-howMany, length),timeData.slice(length-howMany, length)];
+      //Data for Line Chart
+      var length = milesData.length;
+      $scope.lineLabels = dateData.slice(length-howMany, length);
+      $scope.lineData = [milesData.slice(length-howMany, length),timeData.slice(length-howMany, length)];
+      $scope.series = ['Miles','Minutes'];
+
+      //Data for Pie Chart
+      $scope.pieLabels = ['Elliptical','Running','Cycling','None'];
+      $scope.pieData = [data[1].elliptical,data[1].running,data[1].cycling,data[1].none];
     });
-  $scope.series = ['Miles','Minutes'];
 
 }]);
