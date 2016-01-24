@@ -40,7 +40,7 @@ gulp.task('updateData', function() {
     var elliptical = 0;
     var cycling = 0;
     var running = 0;
-    var none = 0;
+    var rest = 0;
     for(var num in days){
         var data = days[num].split('|');
         var miles = data[0].split(' ')[0];
@@ -52,12 +52,12 @@ gulp.task('updateData', function() {
         }else if(data[1]=="Run"){
             running++;
         }else if(data[1]=="None"){
-            none++;
+            rest++;
         }
         result.push({mile:miles,type:data[1],time:minutes,date:data[3]});
     }
 
-    result[1] ={elliptical:elliptical,cycling:cycling,running:running,none:none};
+    result[1] ={elliptical:elliptical,cycling:cycling,running:running,rest:rest};
     fs.writeFile('./public/data/data.json',JSON.stringify(result),function(err) {
     if(err) {
       console.log(err);

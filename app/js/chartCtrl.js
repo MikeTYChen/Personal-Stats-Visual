@@ -36,8 +36,8 @@ angular.module('chartCtrl', [])
       $scope.series = ['Miles','Minutes'];
 
       //Data for Pie Chart
-      $scope.pieLabels = ['Elliptical','Running','Cycling','None'];
-      $scope.pieData = [data[1].elliptical,data[1].running,data[1].cycling,data[1].none];
+      $scope.pieLabels = ['Elliptical','Running','Cycling','Rest'];
+      $scope.pieData = [data[1].elliptical,data[1].running,data[1].cycling,data[1].rest];
     });
 
 }]);
