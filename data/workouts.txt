@@ -58,3 +58,4 @@
 6 Miles|Elliptical|56 Minutes|1-25-16
 0 Miles|None|0 Minutes|1-26-16
 5 Miles|Elliptical|53 Minutes|1-27-16
+5 Miles|Elliptical|54 Minutes|1-28-16
