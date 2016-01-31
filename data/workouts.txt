@@ -60,4 +60,5 @@
 5 Miles|Elliptical|53 Minutes|1-27-16
 5 Miles|Elliptical|54 Minutes|1-28-16
 4.5 Miles|Elliptical|50 Minutes|1-29-16
-0 Miles|None|0 Minutes|1-30-16
+4 Miles|Run|50 Minutes|1-30-16
+0 Miles|None|0 Minutes|1-31-16
