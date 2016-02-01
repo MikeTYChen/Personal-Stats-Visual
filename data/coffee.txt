@@ -3,3 +3,4 @@ Cups|Type|Date
 2 Cups|Coffee|1-29-16
 0 Cups|Coffee|1-30-16
 0 Cups|Coffee|1-31-16
+1 Cups|Coffee|2-1-16
