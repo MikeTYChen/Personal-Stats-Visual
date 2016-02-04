@@ -6,3 +6,4 @@ Cups|Type|Date
 1 Cups|Coffee|2-1-16
 1 Cups|Coffee|2-2-16
 1 Cups|Coffee|2-3-16
+3 Cups|Coffee|2-4-16

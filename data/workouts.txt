@@ -65,3 +65,4 @@
 0 Miles|None|0 Minutes|2-1-16
 0 Miles|None|0 Minutes|2-2-16
 4 Miles|Elliptical|50 Minutes|2-3-16
+0 Miles|None|0 Minutes|2-4-16
